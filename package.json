@@ -8,5 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rainboy",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "markdown-it": "^10.0.0",
+    "prismjs": "^1.17.1"
+  }
 }
