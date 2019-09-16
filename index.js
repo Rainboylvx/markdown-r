@@ -14,6 +14,7 @@ md.use( require("./lib/preWrapper"))
     .use( require("markdown-it-emoji") )
     .use( require("markdown-it-multimd-table") )
     .use( require("markdown-it-kbd") )
+    .use( require("markdown-it-task-checkbox") )
 
 /*
  *md.renderer.rules.emoji = function(token,idx){
