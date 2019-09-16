@@ -29,8 +29,12 @@ for( let file of watch_files ){
     })
 }
 
+const staticPath = [
+    pathFn.join(__dirname,'../assets'),
+    pathFn.join(__dirname,'output')
+]
 
-var ls = spawn('browser-sync',['start','--server',`--files`,`index.html,*.css`,'--no-open'],{
+var ls = spawn('browser-sync',['start','--ss','../../assets','--server',`--files`,`index.html,*.css`,'--no-open'],{
     cwd:`${__dirname}/output`,
     stdio:['inherit','inherit','inherit']
 })

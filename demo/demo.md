@@ -1,3 +1,13 @@
+## Code highlight
+
+```c
+#include <cstdio>
+int main(){
+    printf("hello world!\n");
+    return 0;
+}
+```
+
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
