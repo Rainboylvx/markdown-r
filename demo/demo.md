@@ -160,6 +160,16 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
+Mulitmd Tables
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+                                              
+New section   |     More      |         Data |
+And more      | With an escaped '\\|'       ||
+
 
 ## Links
 
