@@ -1,5 +1,6 @@
 const highlight = require("./lib/highlight.js")
 const twemoji = require("twemoji")
+const mdItContainer = require("markdown-it-container") 
 var md = require("markdown-it")({
     html:true,
     linkify:true,
@@ -15,6 +16,7 @@ md.use( require("./lib/preWrapper"))
     .use( require("markdown-it-multimd-table") )
     .use( require("markdown-it-kbd") )
     .use( require("markdown-it-task-checkbox") )
+    .use( mdItContainer ,... require("./lib/container/default.js"))
 
 /*
  *md.renderer.rules.emoji = function(token,idx){

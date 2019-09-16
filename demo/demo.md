@@ -1,3 +1,16 @@
+::: warning
+**here be dragons**
+:::
+
+::: error
+**here be dragons**
+:::
+
+
+::: info
+**here be dragons**
+:::
+
 ## Math
 
 $1+1=2$
