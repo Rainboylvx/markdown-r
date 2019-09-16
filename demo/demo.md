@@ -11,6 +11,16 @@
 **here be dragons**
 :::
 
+::: fold
+```c
+#include <cstdio>
+int main(){
+    printf("hello world!\n");
+    return 0;
+}
+```
+:::
+
 ## Math
 
 $1+1=2$

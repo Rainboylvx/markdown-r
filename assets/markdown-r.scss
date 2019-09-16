@@ -14,3 +14,69 @@
         }
     }
 }
+
+// details 折叠
+
+.markdown-body {
+    details {
+        margin: 0 0 0.6em 0;
+        summary {
+            display: inine-block;
+            padding: 0.3em 0.6em;
+            width: auto;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 lighten(midnightblue,65%);
+            cursor: pointer;
+            background: lighten(midnightblue,55%) linear-gradient(to bottom, lighten(midnightblue,60%)  48%, lighten(midnightblue,55%)  52%);
+            border: solid 1px lighten(midnightblue,40%);
+            border-radius: 0.3em;
+            color: midnightblue;
+            user-select: none;
+
+            .details-open-indicator { position: absolute; visibility: hidden; }
+            &::-webkit-details-marker { display: none; }
+            &:before { 
+                content: "​​\25B6";
+                float: left;
+                margin-right: 0.5em;
+                transform: rotate(0deg);
+                transition: transform 0.3s ease-out;
+            }
+            &:after { 
+                content: "展开";
+                float: right;
+                opacity: 0;
+                font-size: 0.8em;
+                transition: opacity 0.8s;
+            }
+            &:hover:after {
+                opacity: 0.7;
+            }
+            &:focus { outline: none; }
+        }
+        article {
+            //padding: 0 1em;
+            border: solid 1px lighten(midnightblue,40%);
+            border-top-color: hsl(0,0,90%);
+            //background: white;
+        }
+
+        &[open] {
+            summary {
+                color: darken(midnightblue,10%);
+                text-shadow: none;
+                background: lighten(midnightblue,45%);
+                border-radius: 0.3em 0.3em 0 0 ;
+                &:before { 
+                    transform: rotate(90deg);
+                }
+                &:after { 
+                    content: "隐藏";
+                }
+            }
+            article { 
+                border-radius: 0 0 0.3em 0.3em ; 
+            }
+        }
+    }
+}
