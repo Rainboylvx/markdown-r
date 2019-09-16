@@ -3,6 +3,13 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     title markdown-r demo
+    link(rel="stylesheet", href="style.css")
   body
-    .markdown-body 
-      | !{markdown || "hello world"}
+    .containter
+      .left
+        .markdown
+          pre
+            | !{markdown || "hello world"}
+      .right
+        .markdown-body 
+          | !{html || "hello world"}

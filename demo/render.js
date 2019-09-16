@@ -7,19 +7,30 @@ var { exec,spawn} = require("child_process")
 let watch_files = ["index.pug",'demo.md']
 var debug = console.log
 
+function render(){
+        var markdown = fs.readFileSync(`${__dirname}/demo.md`,{
+            encoding:'utf-8'
+        })
+        var html = pug.renderFile(pathFn.join(__dirname,"index.pug"),{
+            markdown:markdown,
+            html: md.render(markdown)
+        })
+        debug("渲染 index.html")
+        fs.writeFileSync(__dirname+'/output/index.html', html)
+}
+
+render()
+
 for( let file of watch_files ){
     fs.watchFile(pathFn.join(__dirname,file),{
         interval:200
     }, ()=>{
-
-        var html = pug.renderFile(pathFn.join(__dirname,"index.pug"))
-        debug("渲染 index.html")
-        fs.writeFileSync(__dirname+'/output/index.html', html)
+        render()
     })
 }
 
 
-var ls = spawn('browser-sync',['start','--server',`--files`,`index.html`],{
+var ls = spawn('browser-sync',['start','--server',`--files`,`index.html,*.css`,'--no-open'],{
     cwd:`${__dirname}/output`,
     stdio:['inherit','inherit','inherit']
 })
