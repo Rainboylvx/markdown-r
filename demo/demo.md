@@ -1,3 +1,4 @@
+
 ::: warning
 **here be dragons**
 :::
@@ -224,6 +225,11 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 ## Images
 
 ![Minion](https://octodex.github.com/images/minion.png)
+
+::: center
+![Minion](https://octodex.github.com/images/minion.png =100x100)
+:::
+
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 Like links, Images also have a footnote style syntax
@@ -316,8 +322,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
 *[HTML]: Hyper Text Markup Language
 
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
 
-::: warning
-*here be dragons*
-:::

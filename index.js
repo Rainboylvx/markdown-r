@@ -19,6 +19,7 @@ md.use( require("./lib/preWrapper"))
     .use( mdItContainer ,... require("./lib/container/default.js"))
     .use( mdItContainer ,... require("./lib/container/fold.js"))
     .use( mdItContainer ,... require("./lib/container/center.js"))
+    .use( require("markdown-it-imsize") )
 
 /*
  *md.renderer.rules.emoji = function(token,idx){

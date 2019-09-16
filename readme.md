@@ -9,3 +9,16 @@ npm run test
 ```
 
 ## 使用的插件
+
+
+
+## 图片大小
+```
+![test](image.png)
+```
+
+is interpreted as
+
+```
+<p><img src="image.png" alt="test" width="200" height="200"></p>
+```
