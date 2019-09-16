@@ -5,12 +5,13 @@
   "repository": "https://github.com/Rainboylvx/markdown-r.git",
   "main": "index.js",
   "scripts": {
-      "test": "node demo/render.js"
+    "test": "node demo/render.js"
   },
   "author": "rainboy",
   "license": "WTFPL",
   "dependencies": {
     "markdown-it": "^10.0.0",
+    "markdown-it-mathjax": "^2.0.0",
     "prismjs": "^1.17.1"
   },
   "devDependencies": {

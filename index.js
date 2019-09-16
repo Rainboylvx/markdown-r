@@ -9,5 +9,6 @@ var md = require("markdown-it")({
 
 md.use( require("./lib/preWrapper"))
     .use( require("./lib/lineNumber"))
+    .use( require("markdown-it-mathjax")() )
 
 module.exports = md

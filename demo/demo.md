@@ -1,3 +1,13 @@
+## Math
+
+$1+1=2$
+
+$$
+1+1=2
+$$
+
+this some word$ 1+1^1=2 $123123
+
 ## Code highlight
 
 ```
