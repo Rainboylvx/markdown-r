@@ -11,8 +11,10 @@
   "license": "WTFPL",
   "dependencies": {
     "markdown-it": "^10.0.0",
+    "markdown-it-emoji": "^1.4.0",
     "markdown-it-mathjax": "^2.0.0",
-    "prismjs": "^1.17.1"
+    "prismjs": "^1.17.1",
+    "twemoji": "^12.1.2"
   },
   "devDependencies": {
     "pug": "^2.0.4"
