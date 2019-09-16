@@ -1,6 +1,22 @@
 ## Code highlight
 
+```
+#include <cstdio>
+int main(){
+    printf("hello world!\n");
+    return 0;
+}
+```
+
 ```c
+#include <cstdio>
+int main(){
+    printf("hello world!\n");
+    return 0;
+}
+```
+
+```plaintext
 #include <cstdio>
 int main(){
     printf("hello world!\n");

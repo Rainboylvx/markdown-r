@@ -38,6 +38,11 @@ var ls = spawn('browser-sync',['start','--ss','../../assets','--server',`--files
     cwd:`${__dirname}/output`,
     stdio:['inherit','inherit','inherit']
 })
-spawn('node-sass',[`-w`,`${__dirname}/style.scss`,`-o`,`${__dirname}/output/`],{
+
+const scss = [
+`${__dirname}/style.scss`,
+`${__dirname}/../assets/markdown-r.scss`,
+]
+spawn('node-sass',[`-w`,scss[1],`-o`,`${__dirname}/output/`],{
     stdio:['inherit','inherit','inherit']
 })

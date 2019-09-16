@@ -6,4 +6,8 @@ var md = require("markdown-it")({
     highlight:highlight
 })
 
+
+md.use( require("./lib/preWrapper"))
+    .use( require("./lib/lineNumber"))
+
 module.exports = md
