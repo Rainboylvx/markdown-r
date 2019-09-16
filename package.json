@@ -12,5 +12,8 @@
   "dependencies": {
     "markdown-it": "^10.0.0",
     "prismjs": "^1.17.1"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4"
   }
 }
