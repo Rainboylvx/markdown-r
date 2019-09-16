@@ -79,6 +79,9 @@ _This is italic text_
 
 ~~Strikethrough~~
 
+## kbd
+
+there are some words [[ctrl]] + [[x]]
 
 ## Blockquotes
 

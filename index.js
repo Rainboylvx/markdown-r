@@ -13,6 +13,7 @@ md.use( require("./lib/preWrapper"))
     .use( require("markdown-it-mathjax")() )
     .use( require("markdown-it-emoji") )
     .use( require("markdown-it-multimd-table") )
+    .use( require("markdown-it-kbd") )
 
 /*
  *md.renderer.rules.emoji = function(token,idx){

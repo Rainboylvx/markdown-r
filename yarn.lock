@@ -286,6 +286,11 @@ markdown-it-emoji@^1.4.0:
   resolved "https://registry.npm.taobao.org/markdown-it-emoji/download/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
   integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
 
+markdown-it-kbd@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/markdown-it-kbd/download/markdown-it-kbd-2.0.0.tgz#adfbd1feddf2f22e2b1636107af748ebbfb9c4f8"
+  integrity sha1-rfvR/t3y8i4rFjYQevdI67+5xPg=
+
 markdown-it-mathjax@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/markdown-it-mathjax/download/markdown-it-mathjax-2.0.0.tgz#ae2b4f4c5c719a03f9e475c664f7b2685231d9e9"
