@@ -80,3 +80,11 @@
         }
     }
 }
+
+// 居中
+.markdown-body {
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+}

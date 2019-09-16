@@ -18,6 +18,7 @@ md.use( require("./lib/preWrapper"))
     .use( require("markdown-it-task-checkbox") )
     .use( mdItContainer ,... require("./lib/container/default.js"))
     .use( mdItContainer ,... require("./lib/container/fold.js"))
+    .use( mdItContainer ,... require("./lib/container/center.js"))
 
 /*
  *md.renderer.rules.emoji = function(token,idx){
