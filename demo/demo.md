@@ -310,56 +310,25 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 - H~2~O
 
 
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+### [ins and del](https://github.com/WenTingZhu/markdown-it-ins-del)
 
 ++Inserted text++
 
+~~del text~~
 
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+### [inline-comments](https://github.com/jay-hodgson/markdown-it-inline-comments)
+
+```
+<!-- comments will be remove -->
+```
+
+<!-- comments will be remove -->
+
+### [mark](https://github.com/markdown-it/markdown-it-mark)
 
 ==Marked text==
 
 
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-:   Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup*
-
-:   Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
 
 
 ### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)

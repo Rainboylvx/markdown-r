@@ -192,3 +192,12 @@ $MARGIN:30px;
         justify-content:center;
     }
 }
+
+// abbr
+
+.markdown-body {
+    abbr[title], abbr[data-original-title] {
+        cursor: help;
+        border-bottom: 1px dotted #777;
+    }
+}

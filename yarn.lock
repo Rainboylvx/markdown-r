@@ -286,6 +286,11 @@ longest@^1.0.1:
   resolved "https://registry.npm.taobao.org/longest/download/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
   integrity sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
 
+markdown-it-abbr@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/markdown-it-abbr/download/markdown-it-abbr-1.0.4.tgz#d66b5364521cbb3dd8aa59dadfba2fb6865c8fd8"
+  integrity sha1-1mtTZFIcuz3Yqlna37ovtoZcj9g=
+
 markdown-it-container@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/markdown-it-container/download/markdown-it-container-2.0.0.tgz#0019b43fd02eefece2f1960a2895fba81a404695"
@@ -301,10 +306,25 @@ markdown-it-imsize@^2.0.1:
   resolved "https://registry.npm.taobao.org/markdown-it-imsize/download/markdown-it-imsize-2.0.1.tgz#cca0427905d05338a247cb9ca9d968c5cddd5170"
   integrity sha1-zKBCeQXQUziiR8ucqdloxc3dUXA=
 
+markdown-it-inline-comments@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/markdown-it-inline-comments/download/markdown-it-inline-comments-1.0.1.tgz#176eabe631a3e08125bd739500f43c51f525896d"
+  integrity sha1-F26r5jGj4IElvXOVAPQ8UfUliW0=
+
+markdown-it-ins-del@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npm.taobao.org/markdown-it-ins-del/download/markdown-it-ins-del-0.1.1.tgz#8b421d8e788ee84a1d572eb3fcc0028ce431c9ea"
+  integrity sha1-i0IdjniO6EodVy6z/MACjOQxyeo=
+
 markdown-it-kbd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/markdown-it-kbd/download/markdown-it-kbd-2.0.0.tgz#adfbd1feddf2f22e2b1636107af748ebbfb9c4f8"
   integrity sha1-rfvR/t3y8i4rFjYQevdI67+5xPg=
+
+markdown-it-mark@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/markdown-it-mark/download/markdown-it-mark-3.0.0.tgz#27c3e39ef3cc310b2dde5375082c9fa912983cda"
+  integrity sha1-J8PjnvPMMQst3lN1CCyfqRKYPNo=
 
 markdown-it-mathjax@^2.0.0:
   version "2.0.0"
@@ -317,6 +337,16 @@ markdown-it-multimd-table@^3.2.3:
   integrity sha1-dcJOWDaNqYmRwFNyTDrPqvthD3Y=
   dependencies:
     markdown-it "^8.4.2"
+
+markdown-it-sub@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/markdown-it-sub/download/markdown-it-sub-1.0.0.tgz#375fd6026eae7ddcb012497f6411195ea1e3afe8"
+  integrity sha1-N1/WAm6ufdywEkl/ZBEZXqHjr+g=
+
+markdown-it-sup@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/markdown-it-sup/download/markdown-it-sup-1.0.0.tgz#cb9c9ff91a5255ac08f3fd3d63286e15df0a1fc3"
+  integrity sha1-y5yf+RpSVawI8/09YyhuFd8KH8M=
 
 markdown-it-task-checkbox@^1.0.6:
   version "1.0.6"

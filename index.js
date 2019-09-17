@@ -24,6 +24,12 @@ md.use( require("./lib/preWrapper"))
     .use( mdItContainer ,... require("./lib/container/blackboard.js"))
     //.use( require('./lib/heading.js'))
     .use( require("markdown-it-imsize") )
+    .use( require("markdown-it-ins-del") )
+    .use( require("markdown-it-inline-comments") )
+    .use( require("markdown-it-sup") )
+    .use( require("markdown-it-sub") )
+    .use( require("markdown-it-mark") )
+    .use( require("markdown-it-abbr") )
     .use( markdownItTocAndAnchor )
 
 md.renderer.rules.emoji = function(token,idx){
