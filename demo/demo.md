@@ -1,3 +1,8 @@
+@[toc]
+
+# demo
+
+## blackboard
 ::: blackboard
 
 $$1 \leq 2$$
