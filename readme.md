@@ -22,3 +22,8 @@ is interpreted as
 ```
 <p><img src="image.png" alt="test" width="200" height="200"></p>
 ```
+
+## emoji
+
+- [twemoji cheat sheet](http://rainboy.coding.me/twemoji_cheat_sheet/)
+- [emoji cheat sheet](http://rainboy.coding.me/twemoji_cheat_sheet/)

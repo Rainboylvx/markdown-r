@@ -22,9 +22,8 @@ md.use( require("./lib/preWrapper"))
     .use( mdItContainer ,... require("./lib/container/blackboard.js"))
     .use( require("markdown-it-imsize") )
 
-/*
- *md.renderer.rules.emoji = function(token,idx){
- *    return twemoji.parse(token[idx].content)
- *}
- */
+md.renderer.rules.emoji = function(token,idx){
+    return twemoji.parse(token[idx].content)
+}
+
 module.exports = md
