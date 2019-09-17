@@ -1,0 +1,11 @@
+body {
+  width: 100%; }
+
+.containter {
+  display: flex; }
+  .containter .right, .containter .left {
+    width: 50%;
+    padding: 10px;
+    overflow-x: scroll; }
+  .containter .left {
+    border-right: 1px solid #000; }
