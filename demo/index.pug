@@ -16,6 +16,11 @@ html(lang="en")
       .right
         .markdown-body 
           | !{html || "hello world"}
+
+    script(src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js")
+    script(src="https://unpkg.com/viz.js@2.1.2/viz.js")
+    script(src="https://unpkg.com/viz.js@2.1.2/full.render.js")
+    script(src="/vizRender.js")
     script(type="text/x-mathjax-config").
       MathJax.Hub.Config({
         extensions: ["tex2jax.js"],

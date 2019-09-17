@@ -184,3 +184,11 @@ $MARGIN:30px;
 .emoji {
   height: 1.2em;
 }
+
+// viz
+.markdown-body {
+    .viz-contain {
+        display: flex;
+        justify-content:center;
+    }
+}

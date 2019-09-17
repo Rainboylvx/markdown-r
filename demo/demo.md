@@ -49,6 +49,39 @@ $$
 
 this some word$ 1+1^1=2 $123123
 
+## viz
+
+```viz-dot
+digraph G {
+    splines=ortho;
+    
+    node[shape=box];
+    x[shape=point];
+    a[label="初始容量网络",shape="Mdiamond"];
+    b[label="构造残余网络"];
+    c[label="BFS 构造层次网络"];
+    d[label="汇点在层次网络中",shape=diamond];
+
+    e[label="DFS 进行增广"]
+    f[label="算法结束"]
+
+    a->b->c->d->e;
+    e->f[style="invis"];
+    
+    {
+        rank=same;
+        x,d,y;
+        y[shape=none,label="再次"];
+    }
+    x:we->d[arrowhead=none,headlabel="否"];
+
+    x:w->f:w[constraint=false];
+
+    e:e->y[constraint=false,arrowhead=none];
+    y->c:e[constraint=false];
+}
+```
+
 ## Code highlight
 
 ```
