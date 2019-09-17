@@ -19,6 +19,7 @@ md.use( require("./lib/preWrapper"))
     .use( mdItContainer ,... require("./lib/container/default.js"))
     .use( mdItContainer ,... require("./lib/container/fold.js"))
     .use( mdItContainer ,... require("./lib/container/class"))
+    .use( mdItContainer ,... require("./lib/container/blackboard.js"))
     .use( require("markdown-it-imsize") )
 
 /*
