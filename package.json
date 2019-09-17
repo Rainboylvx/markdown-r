@@ -5,6 +5,7 @@
   "repository": "https://github.com/Rainboylvx/markdown-r.git",
   "main": "index.js",
   "scripts": {
+    "build": "node-sass assets/markdown-r.scss -o assets/",
     "test": "node demo/render.js"
   },
   "author": "rainboy",
