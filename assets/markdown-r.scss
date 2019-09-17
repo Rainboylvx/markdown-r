@@ -1,3 +1,4 @@
+$MARGIN:30px;
 .markdown-body {
     .line-numbers-mode {
         pre {
@@ -97,7 +98,7 @@
         //padding: 10px;
 		position: relative;
 		//width: 640px;
-		margin: auto 7%;
+		margin: $MARGIN 7%;
 		border: tan solid 12px;
 		border-top: #bda27e solid 12px;
 		border-left: #b19876 solid 12px;
@@ -128,5 +129,53 @@
         color: rgba(238, 238, 238, 0.7);
         text-align: center;
         padding-top: 2px;
+    }
+}
+
+// warning,info,error
+.markdown-body {
+    .warning,.error,.info{
+        position: relative;
+        background: #ccc;
+        border-left: 5px solid red;
+        min-height: 50px;
+        margin-top: $MARGIN/2;
+        margin-bottom: $MARGIN/2;
+        padding: 12px 24px 12px 30px;
+        .title-icon {
+            position: absolute;
+            left:-12px;
+            top:10px;
+            img {
+                height: 20px;
+                width: 20px;
+                border-radius:100%;
+            }
+        }
+    }
+    .warning {
+        border-color: #ff9800;
+        .title-icon {
+            img {
+                background: darken($color: #ff9800, $amount: 10%);
+            }
+        }
+    }
+
+    .info{
+        border-color: #00529B;
+        .title-icon {
+            img {
+                background: lighten($color: #00529B, $amount: 30%);
+            }
+        }
+    }
+
+    .error{
+        .title-icon {
+            img {
+                background: lighten($color: red, $amount: 20%);
+            }
+        }
     }
 }
