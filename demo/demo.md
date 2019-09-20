@@ -7,11 +7,17 @@
 
 $$1 \leq 2$$
 
-**here be dragons**
+**strong**
 
-**here be dragons**
+*em*
 
-**here be dragons**
+normal text
+
+ - list item 1
+ - list item 2
+    - list item 2.1
+ - list item 3
+
 :::
 
 ::: warning

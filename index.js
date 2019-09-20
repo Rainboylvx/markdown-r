@@ -30,7 +30,11 @@ md.use( require("./lib/preWrapper"))
     .use( require("markdown-it-sub") )
     .use( require("markdown-it-mark") )
     .use( require("markdown-it-abbr") )
-    .use( markdownItTocAndAnchor )
+    .use( markdownItTocAndAnchor ,{
+        tocFirstLevel:2,
+        tocLastLevel:3,
+        //anchorLinkSymbol:'⇄'
+    })
 
 md.renderer.rules.emoji = function(token,idx){
     return twemoji.parse(token[idx].content)
