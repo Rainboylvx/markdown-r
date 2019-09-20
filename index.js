@@ -35,6 +35,7 @@ md.use( require("./lib/preWrapper"))
         tocLastLevel:3,
         //anchorLinkSymbol:'⇄'
     })
+    .use( require('./lib/tocAnchorExtent.js'))
 
 md.renderer.rules.emoji = function(token,idx){
     return twemoji.parse(token[idx].content)
