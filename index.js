@@ -30,6 +30,7 @@ md.use( require("./lib/preWrapper"))
     .use( require("markdown-it-sub") )
     .use( require("markdown-it-mark") )
     .use( require("markdown-it-abbr") )
+    .use( require("markdown-it-footnote") )
     .use( markdownItTocAndAnchor ,{
         tocFirstLevel:2,
         tocLastLevel:3,
