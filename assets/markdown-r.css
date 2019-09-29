@@ -5,7 +5,8 @@
     padding-right: 6px;
     margin-right: 6px;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
-    color: #818181; }
+    color: #818181;
+    text-align: right; }
   .markdown-body .line-numbers-mode pre .line-numbers-wrapper, .markdown-body .line-numbers-mode pre code {
     font-size: 16px; }
 
