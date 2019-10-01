@@ -358,4 +358,6 @@ belong to the previous footnote.
 
 ## bilibili video iframe
 
+::: center
 [<[ av11525610 ]>]
+:::
