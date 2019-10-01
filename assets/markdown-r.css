@@ -64,6 +64,15 @@
   display: flex;
   justify-content: center; }
 
+.markdown-body .line {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 0 0 auto; }
+  .markdown-body .line > * {
+    margin-right: 5px; }
+
 .markdown-body .blackboard {
   color: rgba(238, 238, 238, 0.7);
   position: relative;

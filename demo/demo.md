@@ -50,6 +50,48 @@ int main(){
 :::
 
 
+## 一行排列
+
+::: line
+
+```viz-dot
+digraph G {
+    splines=ortho;
+    
+    node[shape=box];
+    x[shape=point];
+    a[label="初始容量网络",shape="Mdiamond"];
+    b[label="构造残余网络"];
+    c[label="BFS 构造层次网络"];
+    d[label="汇点在层次网络中",shape=diamond];
+
+    e[label="DFS 进行增广"]
+    f[label="算法结束"]
+
+    a->b->c->d->e;
+    e->f[style="invis"];
+    
+    {
+        rank=same;
+        x,d,y;
+        y[shape=none,label="再次"];
+    }
+    x:we->d[arrowhead=none,headlabel="否"];
+
+    x:w->f:w[constraint=false];
+
+    e:e->y[constraint=false,arrowhead=none];
+    y->c:e[constraint=false];
+}
+```
+
+![test](https://img-blog.csdnimg.cn/20190124150454972.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Nwb25nbzE=,size_16,color_FFFFFF,t_70 =100x100)
+
+
+![test](https://img-blog.csdnimg.cn/20190124150454972.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Nwb25nbzE=,size_16,color_FFFFFF,t_70 =100x100)
+:::
+
+
 ## Math
 
 $1+1=2$

@@ -89,7 +89,20 @@ $MARGIN:30px;
         display: flex;
         justify-content: center;
     }
+
+    .line {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      flex-wrap: wrap;
+      flex: 0 0 auto;
+      &>*{
+        margin-right:5px;
+      }
+    }
 }
+
+// line
 
 // blackboard
 
