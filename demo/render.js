@@ -46,3 +46,7 @@ const scss = [
 spawn('node-sass',[`-w`,scss[1],`-o`,`${__dirname}/../assets`],{
     stdio:['inherit','inherit','inherit']
 })
+
+spawn('node-sass',[`-w`,scss[1],`-o`,`${__dirname}/output`],{
+    stdio:['inherit','inherit','inherit']
+})
