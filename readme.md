@@ -81,6 +81,7 @@ npm run test
 
  - full.render.js
  - viz.js
+ - vue.js
  - viz-gallery.js
     - cdn: https://cdn.jsdelivr.net/gh/rbookr/web-components/dist/viz-gallery/viz-gallery.min.js
 
