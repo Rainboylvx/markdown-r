@@ -82,11 +82,12 @@ npm run test
  - full.render.js
  - viz.js
  - viz-gallery.js
+    - cdn: https://cdn.jsdelivr.net/gh/rbookr/web-components/dist/viz-gallery/viz-gallery.min.js
 
 语法如下
 
 ```
-<<<< viz-gallery(title="demo",engine="dot")
+<<<< viz-gallery(title="demo",engine="dot",height="400")
 
 \`\`\` 这是log1
 graph G{
