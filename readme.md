@@ -89,17 +89,17 @@ npm run test
 ```
 <<<< viz-gallery(title="demo",engine="dot",height="400")
 
-\`\`\` 这是log1
+​``` 这是log1
 graph G{
   a--b;
 }
-\`\`\`
+​```
 
-\`\`\` neato 这是 log2
+​``` neato 这是 log2
 graph G{
   a--b;
 }
-\`\`\`
+​```
 <<<<
 
 ```
