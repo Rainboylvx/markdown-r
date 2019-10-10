@@ -7,11 +7,17 @@
 
 $$1 \leq 2$$
 
-**here be dragons**
+**strong**
 
-**here be dragons**
+*em*
 
-**here be dragons**
+normal text
+
+ - list item 1
+ - list item 2
+    - list item 2.1
+ - list item 3
+
 :::
 
 ::: warning
@@ -41,6 +47,48 @@ int main(){
 
 ::: center
 ## 居中
+:::
+
+
+## 一行排列
+
+::: line
+
+```viz-dot
+digraph G {
+    splines=ortho;
+    
+    node[shape=box];
+    x[shape=point];
+    a[label="初始容量网络",shape="Mdiamond"];
+    b[label="构造残余网络"];
+    c[label="BFS 构造层次网络"];
+    d[label="汇点在层次网络中",shape=diamond];
+
+    e[label="DFS 进行增广"]
+    f[label="算法结束"]
+
+    a->b->c->d->e;
+    e->f[style="invis"];
+    
+    {
+        rank=same;
+        x,d,y;
+        y[shape=none,label="再次"];
+    }
+    x:we->d[arrowhead=none,headlabel="否"];
+
+    x:w->f:w[constraint=false];
+
+    e:e->y[constraint=false,arrowhead=none];
+    y->c:e[constraint=false];
+}
+```
+
+![test](https://img-blog.csdnimg.cn/20190124150454972.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Nwb25nbzE=,size_16,color_FFFFFF,t_70 =100x100)
+
+
+![test](https://img-blog.csdnimg.cn/20190124150454972.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Nwb25nbzE=,size_16,color_FFFFFF,t_70 =100x100)
 :::
 
 
@@ -339,34 +387,53 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
 *[HTML]: Hyper Text Markup Language
 
+## footnote
 
-</pre></div></div><div class="right"><div class="markdown-body"> <p><ul class="markdownIt-TOC">
-<li><a href="#demo">demo</a>
-<ul>
+Here is a footnote reference,[^1] and another.[^longnote]
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+    Subsequent paragraphs are indented to show that they
+belong to the previous footnote.
+
+## bilibili video iframe
+
+::: center
+[<[ av11525610 ]>]
+:::
+
+## viz-gallery
+
+
+<<<< viz-gallery(title="demo",engine="dot")
+
+```
+graph G{
+  a--b;
+}
+```
+
+``` neato 这是 log
+graph G{
+  a--b;
+}
+```
+<<<<
+</pre></div></div><div class="right"><div class="markdown-body"> <p><div class=toc-body><div class="toc-title">
+        <h3>目录</h3>
+</div>
+<div class="toc-content"><ul class="markdownIt-TOC">
 <li><a href="#blackboard">blackboard</a></li>
 <li><a href="#%E5%B1%85%E4%B8%AD">居中</a></li>
+<li><a href="#%E4%B8%80%E8%A1%8C%E6%8E%92%E5%88%97">一行排列</a></li>
 <li><a href="#math">Math</a></li>
 <li><a href="#viz">viz</a></li>
 <li><a href="#code-highlight">Code highlight</a></li>
-</ul>
-</li>
-<li><a href="#h1-heading">h1 Heading 😎</a>
-<ul>
 <li><a href="#h2-heading">h2 Heading</a>
 <ul>
-<li><a href="#h3-heading">h3 Heading</a>
-<ul>
-<li><a href="#h4-heading">h4 Heading</a>
-<ul>
-<li><a href="#h5-heading">h5 Heading</a>
-<ul>
-<li><a href="#h6-heading">h6 Heading</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#h3-heading">h3 Heading</a></li>
 </ul>
 </li>
 <li><a href="#horizontal-rules">Horizontal Rules</a></li>
@@ -390,17 +457,27 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 <li><a href="#abbreviations">Abbreviations</a></li>
 </ul>
 </li>
+<li><a href="#footnote">footnote</a></li>
+<li><a href="#bilibili-video-iframe">bilibili video iframe</a></li>
+<li><a href="#viz-gallery">viz-gallery</a></li>
 </ul>
-</li>
-</ul>
-</p>
+</div></div></p>
 <h1 id="demo"><a class="markdownIt-Anchor" href="#demo">#</a> demo</h1>
 <h2 id="blackboard"><a class="markdownIt-Anchor" href="#blackboard">#</a> blackboard</h2>
 <div class="blackboard">
 <div class="blackboard-content"><p>\[1 \leq 2\]</p>
-<p><strong>here be dragons</strong></p>
-<p><strong>here be dragons</strong></p>
-<p><strong>here be dragons</strong></p>
+<p><strong>strong</strong></p>
+<p><em>em</em></p>
+<p>normal text</p>
+<ul>
+<li>list item 1</li>
+<li>list item 2
+<ul>
+<li>list item 2.1</li>
+</ul>
+</li>
+<li>list item 3</li>
+</ul>
 </div></div>
 <div class="warning"><div class="title-icon"><img class="emoji" draggable="false" alt="⚠️" src="https://twemoji.maxcdn.com/v/12.1.2/72x72/26a0.png"/></div>
 <p><strong>here be dragons</strong></p>
@@ -422,6 +499,40 @@ int <span class="token function">main</span><span class="token punctuation">(</s
 <p><strong>居中</strong></p>
 <div class="center">
 <h2 id="居中"><a class="markdownIt-Anchor" href="#居中">#</a> 居中</h2>
+</div>
+<h2 id="一行排列"><a class="markdownIt-Anchor" href="#一行排列">#</a> 一行排列</h2>
+<div class="line">
+<div class="viz-contain"><pre class="viz viz-dot"><code>digraph G {
+    splines=ortho;
+    
+    node[shape=box];
+    x[shape=point];
+    a[label="初始容量网络",shape="Mdiamond"];
+    b[label="构造残余网络"];
+    c[label="BFS 构造层次网络"];
+    d[label="汇点在层次网络中",shape=diamond];
+
+    e[label="DFS 进行增广"]
+    f[label="算法结束"]
+
+    a->b->c->d->e;
+    e->f[style="invis"];
+    
+    {
+        rank=same;
+        x,d,y;
+        y[shape=none,label="再次"];
+    }
+    x:we->d[arrowhead=none,headlabel="否"];
+
+    x:w->f:w[constraint=false];
+
+    e:e->y[constraint=false,arrowhead=none];
+    y->c:e[constraint=false];
+}
+</code></pre>
+</div><p><img src="https://img-blog.csdnimg.cn/20190124150454972.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Nwb25nbzE=,size_16,color_FFFFFF,t_70" alt="test" width="100" height="100"></p>
+<p><img src="https://img-blog.csdnimg.cn/20190124150454972.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Nwb25nbzE=,size_16,color_FFFFFF,t_70" alt="test" width="100" height="100"></p>
 </div>
 <h2 id="math"><a class="markdownIt-Anchor" href="#math">#</a> Math</h2>
 <p>\(1+1=2\)</p>
@@ -707,7 +818,26 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <h3 id="abbreviations"><a class="markdownIt-Anchor" href="#abbreviations">#</a> <a href="https://github.com/markdown-it/markdown-it-abbr">Abbreviations</a></h3>
 <p>This is <abbr title="Hyper Text Markup Language">HTML</abbr> abbreviation example.</p>
 <p>It converts “<abbr title="Hyper Text Markup Language">HTML</abbr>”, but keep intact partial entries like “xxxHTMLyyy” and so on.</p>
-</div></div></div><script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><script src="https://unpkg.com/viz.js@2.1.2/viz.js"></script><script src="https://unpkg.com/viz.js@2.1.2/full.render.js"></script><script src="vizRender.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+<h2 id="footnote"><a class="markdownIt-Anchor" href="#footnote">#</a> footnote</h2>
+<p>Here is a footnote reference,<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> and another.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
+<h2 id="bilibili-video-iframe"><a class="markdownIt-Anchor" href="#bilibili-video-iframe">#</a> bilibili video iframe</h2>
+<div class="center">
+<iframe class="bilibili_iframe" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" src="//player.bilibili.com/player.html?aid=11525610"></iframe>
+</div>
+<h2 id="viz-gallery"><a class="markdownIt-Anchor" href="#viz-gallery">#</a> viz-gallery</h2>
+<viz-gallery data="[{&quot;engine&quot;:null,&quot;log&quot;:null,&quot;src&quot;:&quot;graph G{\n  a--b;\n}&quot;},{&quot;engine&quot;:&quot;neato&quot;,&quot;log&quot;:&quot;这是 log&quot;,&quot;src&quot;:&quot;graph G{\n  a--b;\n}&quot;}]" title="demo" engine="dot"></viz-gallery>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Here is the footnote. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Here’s one with multiple blocks.</p>
+<p>Subsequent paragraphs are indented to show that they
+belong to the previous footnote. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div></div></div><script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><script src="https://unpkg.com/vue"></script><script src="https://unpkg.com/viz.js@2.1.2/viz.js"></script><script src="https://unpkg.com/viz.js@2.1.2/full.render.js"></script><script src="https://cdn.jsdelivr.net/gh/rbookr/web-components/dist/viz-gallery/viz-gallery.min.js"></script><script src="vizRender.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
   extensions: ["tex2jax.js"],
   jax: ["input/TeX", "output/HTML-CSS"],
   tex2jax: {
