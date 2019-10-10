@@ -403,3 +403,21 @@ belong to the previous footnote.
 ::: center
 [<[ av11525610 ]>]
 :::
+
+## viz-gallery
+
+
+<<<< viz-gallery(title="demo",engine="dot")
+
+```
+graph G{
+  a--b;
+}
+```
+
+``` neato 这是 log
+graph G{
+  a--b;
+}
+```
+<<<<

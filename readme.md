@@ -75,6 +75,35 @@ npm run test
 | markdown-it-toc-and-anchor  | toc           |
 
 
+## viz-gallery
+
+需要的`js`资源: https://github.com/rbookr/web-components
+
+ - full.render.js
+ - viz.js
+ - viz-gallery.js
+
+语法如下
+
+```
+<<<< viz-gallery(title="demo",engine="dot")
+
+\`\`\` 这是log1
+graph G{
+  a--b;
+}
+\`\`\`
+
+\`\`\` neato 这是 log2
+graph G{
+  a--b;
+}
+\`\`\`
+<<<<
+
+```
+
+
 ## emoji
 
 - [twemoji cheat sheet](http://rainboy.coding.me/twemoji_cheat_sheet/)

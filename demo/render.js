@@ -43,6 +43,6 @@ const scss = [
 `${__dirname}/style.scss`,
 `${__dirname}/../assets/markdown-r.scss`,
 ]
-spawn('node-sass',[`-w`,scss[1],`-o`,`${__dirname}/output/`],{
+spawn('node-sass',[`-w`,scss[1],`-o`,`${__dirname}/../assets`],{
     stdio:['inherit','inherit','inherit']
 })
