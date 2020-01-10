@@ -15,7 +15,11 @@ md.use( require("./lib/preWrapper"))
     .use( require("./lib/lineNumber"))
     .use( require("markdown-it-mathjax")() )
     .use( require("markdown-it-emoji") )
-    .use( require("markdown-it-multimd-table") )
+    .use( require("markdown-it-multimd-table") ,{
+              multiline:  true,
+              rowspan:    false,
+              headerless: true,
+    })
     .use( require("markdown-it-kbd") )
     .use( require("markdown-it-task-checkbox") )
     .use( mdItContainer ,... require("./lib/container/default.js"))

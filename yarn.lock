@@ -336,10 +336,10 @@ markdown-it-mathjax@^2.0.0:
   resolved "https://registry.npm.taobao.org/markdown-it-mathjax/download/markdown-it-mathjax-2.0.0.tgz#ae2b4f4c5c719a03f9e475c664f7b2685231d9e9"
   integrity sha1-ritPTFxxmgP55HXGZPeyaFIx2ek=
 
-markdown-it-multimd-table@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.npm.taobao.org/markdown-it-multimd-table/download/markdown-it-multimd-table-3.2.3.tgz#75c24e58368da98991c053724c3acfaafb610f76"
-  integrity sha1-dcJOWDaNqYmRwFNyTDrPqvthD3Y=
+markdown-it-multimd-table@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/markdown-it-multimd-table/download/markdown-it-multimd-table-4.0.0.tgz#76eb4e1fc40726eeca4fd97eef214349bea02e76"
+  integrity sha1-dutOH8QHJu7KT9l+7yFDSb6gLnY=
   dependencies:
     markdown-it "^8.4.2"
 
