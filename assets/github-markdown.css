@@ -1,6 +1,6 @@
 @font-face {
     font-family: MathJax_Math-BoldItalic;
-    src:url("/fonts/MathJax_Math-BoldItalic.otf");
+    src:url("https://cdn.bootcss.com/mathjax/2.7.6/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff");
 }
 @font-face {
   font-family: octicons-link;
