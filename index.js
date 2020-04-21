@@ -2,8 +2,18 @@ const highlight = require("./lib/highlight.js")
 const twemoji = require("twemoji")
 const mdItContainer = require("markdown-it-container") 
 const markdownItTocAndAnchor = require('markdown-it-toc-and-anchor').default;
+const pangu = require("pangu")
 
-var md = require("markdown-it")({
+var MarkdownIt  = require("markdown-it")
+
+MarkdownIt.prototype.render = function (src, env) {
+  env = env || {};
+  if( this.options.pangu)
+    src = pangu.spacing(src)
+  return this.renderer.render(this.parse(src, env), this.options, env);
+};
+
+var md = MarkdownIt({
     html:true,
     linkify:true,
     typographer:true,
@@ -47,5 +57,6 @@ md.use( require("./lib/preWrapper"))
 md.renderer.rules.emoji = function(token,idx){
     return twemoji.parse(token[idx].content)
 }
+
 
 module.exports = md

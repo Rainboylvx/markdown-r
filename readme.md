@@ -126,3 +126,19 @@ graph G{
 ```
 
 ## TODO:bilibili_iframe
+
+
+## pangu
+
+
+
+```javascript
+var md = require("./index.js")
+md.options.pangu = true
+console.log(md.render("與PM戰鬥的人，應當小心自己不要成為PM"))
+```
+
+参考自:
+- [中英文排版空格问题解决方案 | 静觅](https://cuiqingcai.com/6533.html)
+- [vinta/pangu.js: Paranoid text spacing in JavaScript](https://github.com/vinta/pangu.js)
+- [中文文案排版指北（简体中文版） — 码志](https://mazhuang.org/wiki/chinese-copywriting-guidelines/)
