@@ -110,3 +110,9 @@ graph G{
 
 - [twemoji cheat sheet](http://rainboy.coding.me/twemoji_cheat_sheet/)
 - [emoji cheat sheet](http://rainboy.coding.me/twemoji_cheat_sheet/)
+
+## image size
+
+```
+![test](image.png =100x200)
+```
