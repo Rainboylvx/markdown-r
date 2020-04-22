@@ -403,10 +403,10 @@ path-parse@^1.0.6:
   resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
 
-prismjs@^1.17.1:
-  version "1.17.1"
-  resolved "https://registry.npm.taobao.org/prismjs/download/prismjs-1.17.1.tgz#e669fcbd4cdd873c35102881c33b14d0d68519be"
-  integrity sha1-5mn8vUzdhzw1ECiBwzsU0NaFGb4=
+prismjs@^1.20.0:
+  version "1.20.0"
+  resolved "https://registry.npm.taobao.org/prismjs/download/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
+  integrity sha1-m2hfxICjUU7nGY6sajv1AkMZ/wM=
   optionalDependencies:
     clipboard "^2.0.0"
 
