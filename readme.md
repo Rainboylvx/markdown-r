@@ -138,3 +138,16 @@ console.log(md.render("與PM戰鬥的人，應當小心自己不要成為PM"))
 - [中英文排版空格问题解决方案 | 静觅](https://cuiqingcai.com/6533.html)
 - [vinta/pangu.js: Paranoid text spacing in JavaScript](https://github.com/vinta/pangu.js)
 - [中文文案排版指北（简体中文版） — 码志](https://mazhuang.org/wiki/chinese-copywriting-guidelines/)
+
+## 图片轮播
+
+
+```
+::: lb
+![](1.png)
+![](2.png)
+![](3.png)
+:::
+```
+
+引入`markdown-r.js markdown-r.css`
