@@ -29,20 +29,22 @@ md.render('# hello world')
 <script src="https://unpkg.com/viz.js@2.1.2/full.render.js"></script>
 <script src="/vizRender.js"></script>
 <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        extensions: ["tex2jax.js"],
-        jax: ["input/TeX", "output/HTML-CSS"],
-        tex2jax: {
+    MathJax.Hub.Config({
+      TeX: { extensions: ["autoload-all.js"] },
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
         //-<!--$表示行内元素，$$表示块状元素 -->
         inlineMath: [ ['$','$'], ["\\\(","\\)"] ],
         displayMath: [ ['$$','$$'], ["\\\[","\\]"] ],
         processEscapes: true
-        },
-        "HTML-CSS": { 
-          availableFonts: ["STIX","TeX"] ,
-          showMathMenu:false
-        }
-      });
+      },
+      "HTML-CSS": {
+        availableFonts: ["STIX","TeX"] ,
+        showMathMenu:false
+      },
+      CommonHTML: { scale: 100 }
+    });
 </script>
 <script async src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js"></script>
 ```
