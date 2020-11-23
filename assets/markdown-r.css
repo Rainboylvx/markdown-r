@@ -79,7 +79,7 @@ html {
 .markdown-body .blackboard {
   color: rgba(238, 238, 238, 0.7);
   position: relative;
-  margin: 30px 7%;
+  margin: 4em 0;
   border: tan solid 12px;
   border-top: #bda27e solid 12px;
   border-left: #b19876 solid 12px;
@@ -112,8 +112,7 @@ html {
   background: #ccc;
   border-left: 5px solid red;
   min-height: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 4em 0;
   padding: 12px 24px 12px 30px; }
   .markdown-body .warning .title-icon, .markdown-body .error .title-icon, .markdown-body .info .title-icon {
     position: absolute;
