@@ -28,7 +28,7 @@
     "markdown-it-task-checkbox": "^1.0.6",
     "markdown-it-toc-and-anchor": "^4.2.0",
     "pangu": "^4.0.7",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.24.0",
     "twemoji": "^12.1.2"
   },
   "devDependencies": {
