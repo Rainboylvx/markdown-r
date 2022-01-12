@@ -11,7 +11,7 @@
   "author": "rainboy",
   "license": "WTFPL",
   "dependencies": {
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0",
